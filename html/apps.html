@@ -610,32 +610,6 @@
 				<form class="registerForm" action="/Register" method="get">
 					<input id="EmailIDlower" class="lp-input" type="text" placeholder="E-mail address">
 					<input id="PassIDlower" class="lp-input" type="password" placeholder="Password">
-					<script>
-						var inputLower = document.getElementById("EmailIDlower");
-						var inputPassLower = document.getElementById("PassIDlower");
-						var timeoutCancel;
-						var SaveFunctionMailLower = function(){
-							if(inputLower.value.length==0) return;
-							clearTimeout(timeoutCancel);
-							timeoutCancel = setTimeout(function(){
-								var xhttp = new XMLHttpRequest();
-								xhttp.open("GET", "/SaveRegisterValueEmail/"+inputLower.value);
-								xhttp.send();
-							}, 250);
-						}
-						var timeoutCancelPass;
-						var SaveFunctionPassLower = function(){
-							if(inputPassLower.value.length==0) return;
-							clearTimeout(timeoutCancelPass);
-							timeoutCancelPass = setTimeout(function(){
-								var xhttp = new XMLHttpRequest();
-								xhttp.open("GET", "/SaveRegisterValuePass/"+inputPassLower.value);
-								xhttp.send();
-							}, 250);
-						}
-						inputLower.addEventListener('input', SaveFunctionMailLower);
-						inputPassLower.addEventListener('input', SaveFunctionPassLower);
-					</script>
 					<button class="regButton regButtonBottom" type="submit">
 						{% if lan == 'en'%} Register {% endif %}
 						{% if lan != 'en'%} Registrera {% endif %}

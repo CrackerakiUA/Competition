@@ -16,4 +16,4 @@ After that you should see <br>
 open that link in yout browser and you should see the webside. You are ready to go.<br>
 
 # Tech Support
-If you have any troubles with the process or questions, you can ask by email: crackeraki@gmail.com
+If you have any troubles with the process or questions, you can ask by email: denis.honchar@bejaboo.com

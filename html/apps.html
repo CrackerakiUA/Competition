@@ -1,0 +1,652 @@
+{% extends 'structure/index.html' %}
+{% block body %}
+<div class="landindpage">
+	<div class="row no-margin topblock">
+		<div id="addImage" class="col-xs-12 no-padding">
+			<div class="darkerLayer"></div>
+				{% include 'structure/topbar.html' %}
+			</div>
+			<div class="landText1">
+				<h3></h3>
+			</div>
+
+			<div class="landText1" style="color: #ffffff;">
+				<h3 class="topLeftTitle">
+					{% if lan == 'en'%} Your Family’s Best Friend {% endif %}
+					{% if lan != 'en'%} Din familjs bästa vän {% endif %}
+				</h3>
+				{% if lan == 'en'%}
+					<div class="topLeftText topLandText">
+						<p>Family life with children should be fun and easy...</p>
+						<p>...and we want to do that by delivering smart, easy-to-use apps<br> that simplify everyday life for you and your family</p>
+					</div>
+				{% endif %}
+				{% if lan != 'en'%}
+					<div class="topLeftText topLandText landTextWV">
+						<p>Småbarnslivet ska vara roligt och enkelt...</p>
+						<p>...och det vi vill göra på den digitala sidan, är att leverera smarta <br>lättanvända appar som förenklar vardagslivet för dig och din familj.</p>
+						<p>På den andra sidan tangentbordet erbjuder vi roliga, inspirerande <br>trycksaker som skapar minnen ända ned till självkostnadspris.</p>
+					</div>
+					<div class="topLeftText topLandText landTextMV">
+						<p>Småbarnslivet ska vara roligt och enkelt...</p>
+						<p>...och det vi vill göra på den digitala sidan, är att leverera smarta lättanvända appar som förenklar vardagslivet för dig och din familj.</p>
+						<p>På den andra sidan tangentbordet erbjuder vi roliga, inspirerande trycksaker som skapar minnen ända ned till självkostnadspris.</p>
+					</div>
+				{% endif %}
+			</div>
+
+			<div class="bottomRow">
+				<div class="imgLeftContainer2">
+					<img class="img-bottom-mob landBottomImg" src="/pub/img/scrapbook_EN.png" alt="" style="left: 5%;">
+				</div>
+				<div class="regFormContainer">
+					<form class="registerForm" action="/Register" method="get">
+
+						<input id="EmailID" class="lp-input" type="text" placeholder="E-mail address">
+						<input id="PassID" class="lp-input" type="password" placeholder="Password">
+
+						<button class="regButton" type="submit">
+							{% if lan == 'en'%} Register {% endif %}
+							{% if lan != 'en'%} Registrera {% endif %}
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="landingFooter">
+				<a href="#SecondPage">
+					<div class="dotsContainer">
+						<img src="/pub/img/arrow-nav.svg">
+					</div>
+				</a>
+			</div>
+
+			<script type="text/javascript">
+			</script>
+		</div>
+	</div>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">
+					{% if lan == 'en'%}
+						Bejaboo Family Sharing
+						<img src="/pub/img/Illustrations-section.png" class="notesLeftImg">
+					{% endif %}
+					{% if lan != 'en'%}
+						Bejaboo Familjedelning
+						<img src="/pub/img/Illustrations-section1.png" class="rightimg">
+					{% endif %}
+				</h4>
+
+			</div>
+			{% if lan == 'en'%}
+				<div class="landColRight">
+					<h4>Sharing information shouldn’t be difficult and complicated</h4>
+					<p>With Bejaboo family sharing, both you and your partner have access to the same pictures, notes and shopping lists - at the same time... on laptop, mobile and tablet.</p>
+					<img src="/pub/img/Illustrations-section1.png" class="rightimg">
+					<div class="leftText">
+						<p>How?<br>Your partner takes a picture, puts it on the family surface and tada! you have the image on your mobile, computer or tablet.</p>
+						<p>At the atenental clinic you get this important information... You create a family note and immediately your partner has the note in his mobile.</p>
+						<p>No matter what Bejaboo app you are using, family sharing is a feature that runs through all what we do. It should be easy to share information between each other.</p>
+					</div>
+				</div>
+			{% endif %}
+			{% if lan != 'en'%}
+				<div class="landColRight landColRightwv">
+					<h4>Dela information ska inte vara krångligt och svårt</h4>
+					<p>Med Bejaboo familjedelning har både du och din partner tillgång till samma bilder, anteckningar, <br>shoppinglista – samtidigt... på era datorer, mobiler och surfplattor.</p>
+					<img src="/pub/img/Illustrations-section1.png" class="rightimg">
+					<div class="leftText">
+						<p>Hur då?<br>Din partner tar en bild, lägger den på familjeytan och vips!<br>...har du bilden i din mobil, dator eller surfplatta.</p>
+						<p>På MVC får du höra det där viktiga som du och din partner bara <br>måste komma ihåg... Skapa en familjeanteckning och direkt<br>har ni båda anteckningen i era mobiler.</p>
+					</div>
+					<p>Oavsett vilken Bejaboo-app du använder, går familjedelningen som en röd tråd <br>genom allt det vi gör. Det ska vara enkelt att dela information mellan varandra.</p>
+				</div>
+				<div class="landColRight landColRightmv">
+					<h4>Dela information ska inte vara krångligt och svårt</h4>
+					<p>Med Bejaboo familjedelning har både du och din partner tillgång till samma bilder, anteckningar, shoppinglista – samtidigt... på era datorer, mobiler och surfplattor.</p>
+					<img src="/pub/img/Illustrations-section1.png" class="rightimg">
+					<div class="leftText">
+						<p>Hur då?<br>Din partner tar en bild, lägger den på familjeytan och vips! ...har du bilden i din mobil, dator eller surfplatta.</p>
+						<p>På MVC får du höra det där viktiga som du och din partner bara måste komma ihåg... Skapa en familjeanteckning och direkthar ni båda anteckningen i era mobiler.</p>
+					</div>
+					<p>Oavsett vilken Bejaboo-app du använder, går familjedelningen som en röd tråd genom allt det vi gör. Det ska vara enkelt att dela information mellan varandra.</p>
+				</div>
+			{% endif %}
+
+		</div>
+	</div>
+	<hr>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">
+					{% if lan == 'en'%} Bejaboo Apps {% endif %}
+					{% if lan != 'en'%} Bejaboo Appar {% endif %}
+				</h4>
+				<div class="supportInfo">
+					<div class="storeRow">
+						<img src="/pub/img/AppleAppstore.png">
+						<img src="/pub/img/google-play-store-logo.png">
+					</div>
+					<div class="browserRow">
+						<img src="/pub/img/chrome.png">
+						<img src="/pub/img/firefox.png">
+						<img src="/pub/img/Opera.png">
+						<img src="/pub/img/safari.png">
+						<img src="/pub/img/Internet_Explorer_10.png">
+					</div>
+				</div>
+			</div>
+			<div class="landColRight">
+				<div class="iconsRow">
+					<div>
+						<div class="iconWrapper">
+							<img src="/pub/img/Names_v5.png">
+							<span>Names</span>
+						</div>
+						<div class="iconWrapper">
+							<img src="/pub/img/Lullaby_v5.png">
+							<span>Lullaby</span>
+						</div>
+						<div class="iconWrapper">
+							<img src="/pub/img/Shoppinglist_v5.png">
+							<span>Shoppinglist</span>
+						</div>
+						<div class="iconWrapper">
+							<img src="/pub/img/Notes_v5.png">
+							<span>Notes</span>
+						</div>
+						<div class="iconWrapper">
+							<img src="/pub/img/Photos_v5.png">
+							<span>Photos</span>
+						</div>
+						<div class="iconWrapper">
+							<img src="/pub/img/Studio_v5.png">
+							<span>Studio</span>
+						</div>
+						<div class="iconWrapper">
+							<img src="/pub/img/BookViewer_v5.jpg">
+							<span>BookViewer</span>
+						</div>
+						<div class="iconWrapper">
+							<img src="/pub/img/Contacts_v5.jpg">
+							<span>Contacts</span>
+						</div>
+					</div>
+						{% if lan == 'en'%}
+							<p>You can use Bejaboo’s apps on laptop, mobile and tablet and are free to use.</p>
+						{% endif %}
+						{% if lan != 'en'%}
+							<p class="p-wv">Alla våra appar är gratis att använda och finns för både Android, iOS <br>och webbläsare på din dator.</p>
+							<p class="p-mv">Alla våra appar är gratis att använda och finns för både Android, iOS och webbläsare på din dator.</p>
+						{% endif %}
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">Bejaboo Names</h4>
+				<img src="/pub/img/Names_v5.png" class="leftColIcon">
+				<div class="supportInfo">
+					<div class="storeRow">
+						<img src="/pub/img/AppleAppstore.png">
+						<img src="/pub/img/google-play-store-logo.png">
+					</div>
+					<div class="browserRow">
+						<img src="/pub/img/chrome.png">
+						<img src="/pub/img/firefox.png">
+						<img src="/pub/img/Opera.png">
+						<img src="/pub/img/safari.png">
+						<img src="/pub/img/Internet_Explorer_10.png">
+					</div>
+				</div>
+			</div>
+			<div class="landColRight">
+				{% if lan == 'en'%}
+					<div class="landColRightInner">
+						<p>It is not easy to find the correct name for the child. With Bejaboo Names we make it easier for you to find the correct name by listing all names that have official names day. Favorite the names that you like and if a name is not in our list, you can easily add your own name.</p>
+						<img src="/pub/img/namesScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/namesScreenMV.png" class="screenImg screenImgMV">
+						<p>...and at the family surface, you can side by side compare your favorite names with your partner's favorite names. It should be fun to find a name for the new family member.</p>
+					</div>
+				{% endif %}
+				{% if lan != 'en'%}
+					<div class="landColRightInner wv">
+						<p>Det är inte det lättaste att hitta rätt namn till det lilla barnet. Med Bejaboo Names gör vi det <br>roligare för dig att hitta rätt namn genom att vi listar alla namn som har en officiell namnsdag.<br>Du favoriserar de namn du gillar, saknar du ett namn i vår lista kan du enkelt lägga till egna namn.</p>
+						<img src="/pub/img/namesScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/namesScreenMV.png" class="screenImg screenImgMV">
+						<p>...och tittar du på familjeytan kan du sida vid sida jämföra dina favoritnamn med din <br>partners favoritnamn. Det ska vara roligt att hitta ett namn till den nya familjemedlemmen.</p>
+					</div>
+					<div class="landColRightInner mv">
+						<p>Det är inte det lättaste att hitta rätt namn till det lilla barnet. Med Bejaboo Names gör vi det roligare för dig att hitta rätt namn genom att vi listar alla namn som har en officiell namnsdag. Du favoriserar de namn du gillar, saknar du ett namn i vår lista kan du enkelt lägga till egna namn.</p>
+						<img src="/pub/img/namesScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/namesScreenMV.png" class="screenImg screenImgMV">
+						<p>...och tittar du på familjeytan kan du sida vid sida jämföra dina favoritnamn med din partners favoritnamn. Det ska vara roligt att hitta ett namn till den nya familjemedlemmen.</p>
+					</div>
+				{% endif %}
+
+
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">Bejaboo Lullaby</h4>
+				<img src="/pub/img/Lullaby_v5.png" class="leftColIcon">
+				<div class="supportInfo">
+					<div class="storeRow">
+						<img src="/pub/img/AppleAppstore.png">
+						<img src="/pub/img/google-play-store-logo.png">
+					</div>
+					<div class="browserRow">
+						<img src="/pub/img/chrome.png">
+						<img src="/pub/img/firefox.png">
+						<img src="/pub/img/Opera.png">
+						<img src="/pub/img/safari.png">
+						<img src="/pub/img/Internet_Explorer_10.png">
+					</div>
+				</div>
+			</div>
+			<div class="landColRight">
+				{% if lan == 'en'%}
+					<div class="landColRightInner">
+						<p>It's not easiest to have the child to sleep. We can not guarantee that the child will fall is asleep calm and sweet ... But! With Bejaboo Lullaby you choose a background image and then we play ten quiet lullabys that have made many children sleep well.</p>
+						<img src="/pub/img/LullabyScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/LullabyScreenMV.png" class="screenImg screenImgMV">
+						<p>...the background image works like a night lamp that illuminates the room.</p>
+					</div>
+				{% endif %}
+				{% if lan != 'en'%}
+					<div class="landColRightInner">
+						<p class="p-wv">Det är inte alltid det lättaste att få barnet att somna. Vi kan heller inte garantera att barnet somnar lugnt <br>och sött... Men! Med Bejaboo Lullaby väljer du en bakgrundsbild, och sedan spelar vi tio lugna vaggvisor <br>som har fått många barn att sova gott.</p>
+						<p class="p-mv">Det är inte alltid det lättaste att få barnet att somna. Vi kan heller inte garantera att barnet somnar lugnt och sött... Men! Med Bejaboo Lullaby väljer du en bakgrundsbild, och sedan spelar vi tio lugna vaggvisor som har fått många barn att sova gott.</p>
+						<img src="/pub/img/LullabyScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/LullabyScreenMV.png" class="screenImg screenImgMV">
+						<p>...bakgrundsbilden fungerar som en nattlampa som lyser upp rummet.</p>
+					</div>
+				{% endif %}
+
+
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">Bejaboo Shoppinglist</h4>
+				<img src="/pub/img/Shoppinglist_v5.png" class="leftColIcon">
+				<div class="supportInfo">
+					<div class="storeRow">
+						<img src="/pub/img/AppleAppstore.png">
+						<img src="/pub/img/google-play-store-logo.png">
+					</div>
+					<div class="browserRow">
+						<img src="/pub/img/chrome.png">
+						<img src="/pub/img/firefox.png">
+						<img src="/pub/img/Opera.png">
+						<img src="/pub/img/safari.png">
+						<img src="/pub/img/Internet_Explorer_10.png">
+					</div>
+				</div>
+			</div>
+			<div class="landColRight">
+				{% if lan == 'en'%}
+					<div class="landColRightInner">
+						<p>With Bejaboo Shopping List, you can easily add products like milk, butter, cheese, salad to the family's common shopping list - Immediately when you add a product to your shopping list, your partner has the updated list in his mobile.</p>
+						<img src="/pub/img/ShoppinglistScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/ShoppinglistScreenMV.png" class="screenImg screenImgMV">
+						<p>...It's not always clear what hairspray or what shaving cream should be purchased. Add a picture to easily describe what to buy. Our everyday food products are already in our system with the right nutritional value that shows calories, fat, protein and carbohydrates. And of course you can create several unique shopping lists, for example, shops that are not visited so often.</p>
+					</div>
+				{% endif %}
+				{% if lan != 'en'%}
+					<div class="landColRightInner wv">
+						<p>Med Bejaboo Shoppinglist lägger du enkelt till produkter som mjölk, smör, ost och sallad till <br>familjens gemensamma inköpslista – Direkt när du lagt till en produkt till inköpslistan har din <br>partner den uppdaterade listan i sin mobil, dator eller surfplatta.</p>
+						<img src="/pub/img/ShoppinglistScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/ShoppinglistScreenMV.png" class="screenImg screenImgMV">
+						<p>...Det är inte alltid att man har det klart för sig vilket hårspray eller raklödder som ska inhandlas. <br>Lägg till en bild så beskriver du enkelt vad det är som ska köpas in. Våra vardagliga matprodukter <br>finns redan i vårt system med rätt näringsvärde som visar kalorier, fett, protein och kolhydrater. <br>Och du kan givetvis skapa flera unika inköpslistor för exempelvis butiker som inte besöks så ofta.</p>
+					</div>
+					<div class="landColRightInner mv">
+						<p>Med Bejaboo Shoppinglist lägger du enkelt till produkter som mjölk, smör, ost och sallad till familjens gemensamma inköpslista – Direkt när du lagt till en produkt till inköpslistan har din partner den uppdaterade listan i sin mobil, dator eller surfplatta.</p>
+						<img src="/pub/img/ShoppinglistScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/ShoppinglistScreenMV.png" class="screenImg screenImgMV">
+						<p>...Det är inte alltid att man har det klart för sig vilket hårspray eller raklödder som ska inhandlas. Lägg till en bild så beskriver du enkelt vad det är som ska köpas in. <br>Våra vardagliga matprodukter finns redan i vårt system med rätt näringsvärde som visar kalorier, fett, protein och kolhydrater. Och du kan givetvis skapa flera unika inköpslistor för exempelvis butiker som inte besöks så ofta.</p>
+					</div>
+				{% endif %}
+
+
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">Bejaboo Notes</h4>
+				<img src="/pub/img/Notes_v5.png" class="leftColIcon">
+				<div class="supportInfo">
+					<div class="storeRow">
+						<img src="/pub/img/AppleAppstore.png">
+						<img src="/pub/img/google-play-store-logo.png">
+					</div>
+					<div class="browserRow">
+						<img src="/pub/img/chrome.png">
+						<img src="/pub/img/firefox.png">
+						<img src="/pub/img/Opera.png">
+						<img src="/pub/img/safari.png">
+						<img src="/pub/img/Internet_Explorer_10.png">
+					</div>
+				</div>
+			</div>
+			<div class="landColRight">
+				{% if lan == 'en'%}
+					<div class="landColRightInner">
+						<p>One can not remember everything - Create a family note and your partner has the note immediately on his computer, mobile or tablet. With Bejaboo Notes, you and your partner can also write in the same note at the same time as a regular chat program - but note.</p>
+						<img src="/pub/img/NotesScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/NotesScreenMV.png" class="screenImg screenImgMV">
+						<p>...the notes you can rearrange as you like and sort the notes by using tags.</p>
+					</div>
+				{% endif %}
+				{% if lan != 'en'%}
+					<div class="landColRightInner wv">
+						<p>Man kan inte komma ihåg allt – Skapa en familjeanteckning och din partner har anteckningen <br>direkt på sin dator, mobil eller surfplatta. Med Bejaboo Notes kan ni även skriva samtidigt <br>i samma anteckning likt ett vanligt chat-program – fast anteckning.</p>
+						<img src="/pub/img/NotesScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/NotesScreenMV.png" class="screenImg screenImgMV">
+						<p>...anteckningarna kan du kasta om hur du vill, och även sortera anteckningarna <br>genom att associera taggar.</p>
+					</div>
+					<div class="landColRightInner mv">
+						<p>Man kan inte komma ihåg allt – Skapa en familjeanteckning och din partner har anteckningen direkt på sin dator, mobil eller surfplatta. Med Bejaboo Notes kan ni även skriva samtidigt i samma anteckning likt ett vanligt chat-program – fast anteckning.</p>
+						<img src="/pub/img/NotesScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/NotesScreenMV.png" class="screenImg screenImgMV">
+						<p>...anteckningarna kan du kasta om hur du vill, och även sortera anteckningarna genom att associera taggar.</p>
+					</div>
+				{% endif %}
+
+
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">Bejaboo Photos</h4>
+				<img src="/pub/img/Photos_v5.png" class="leftColIcon">
+				<div class="supportInfo">
+					<div class="storeRow">
+						<img src="/pub/img/AppleAppstore.png">
+						<img src="/pub/img/google-play-store-logo.png">
+					</div>
+					<div class="browserRow">
+						<img src="/pub/img/chrome.png">
+						<img src="/pub/img/firefox.png">
+						<img src="/pub/img/Opera.png">
+						<img src="/pub/img/safari.png">
+						<img src="/pub/img/Internet_Explorer_10.png">
+					</div>
+				</div>
+			</div>
+			<div class="landColRight">
+				{% if lan == 'en'%}
+					<div class="landColRightInner">
+						<p>All images that you add to the family surface, both you and your partner have access directly from your mobiles, computers, or tablets.</p>
+						<p>"Your partner takes a picture, puts it on the family surface and both of you immediately see the picture in your mobiles", You do not even have to ask for it.</p>
+						<img src="/pub/img/PhotosScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/PhotosScreenMV.png" class="screenImg screenImgMV">
+						<p>...and by creating photo albums you can easily sort your and your family’s pictures.</p>
+					</div>
+				{% endif %}
+				{% if lan != 'en'%}
+					<div class="landColRightInner wv">
+						<p>Alla bilder som du lägger till familjeytan har både du och din partner direkt tillgång till, <br>från era mobiler, datorer eller surfplattor.</p>
+						<p>"Din partner tar en bild, lägger den på familjeytan och direkt finns bilden i era mobiler", <br>Du behöver inte ens be om den.</p>
+						<img src="/pub/img/PhotosScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/PhotosScreenMV.png" class="screenImg screenImgMV">
+						<p>...och genom att skapa fotoalbum kan du enkelt sortera dina och familjens bilder.</p>
+					</div>
+					<div class="landColRightInner mv">
+						<p>Alla bilder som du lägger till familjeytan har både du och din partner direkt tillgång till, från era mobiler, datorer eller surfplattor.</p>
+						<p>"Din partner tar en bild, lägger den på familjeytan och direkt finns bilden i era mobiler", Du behöver inte ens be om den.</p>
+						<img src="/pub/img/PhotosScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/PhotosScreenMV.png" class="screenImg screenImgMV">
+						<p>...och genom att skapa fotoalbum kan du enkelt sortera dina och familjens bilder.</p>
+					</div>
+				{% endif %}
+
+
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">Bejaboo Studio</h4>
+				<img src="/pub/img/Studio_v5.png" class="leftColIcon">
+				<div class="supportInfo">
+					<div class="storeRow">
+					</div>
+					<div class="browserRow">
+						<img src="/pub/img/chrome.png">
+						<img src="/pub/img/firefox.png">
+						<img src="/pub/img/Opera.png">
+						<img src="/pub/img/safari.png">
+					</div>
+				</div>
+			</div>
+			<div class="landColRight">
+				{% if lan == 'en'%}
+					<div class="landColRightInner">
+						<p>With Bejaboo Studio, you create your baby book using our existing templates created from our ScrapKits. You can change the design and content, modify by changing colors create shadow effects - Only imagination sets limits.</p>
+						<p>When a holiday is approaching, you use Bejaboo Studio to create your family's Christmas card, Easter card or invitation card by using our templates that you can manipulate freely as you like.</p>
+						<img src="/pub/img/StudioScreen.png" class="screenImg studioImg">
+						<img src="/pub/img/AppleMonitor.png" class="screenImg studioImgMV">
+						<p>...With Bejaboo Studio we've taken ScrapBooking and made it digital - We've loaded Bejaboo Studio with fun speech bubbles and beautiful ScrapKits that you can use to make your book look amazing.</p>
+						<p class="infoStudioText"><span style="color: red;">Information:</span><br>At present, only the browser Google Chrome and elder versions of Apple Safari have full support for Bejaboo Studio. Mozilla Firefox lacks support for svg backgrounds.</p>
+					</div>
+				{% endif %}
+				{% if lan != 'en'%}
+					<div class="landColRightInner wv">
+						<p>Med Bejaboo Studio har vi tagit ScrapBooking och gjort det digitalt. Här skapar du konstverk som vi <br>delar upp i Produkter (bebisbok, fotobok, pussel, kalender och andra roliga trycksaker) och <br>Digitala Produkter (Facebook-bakgrunder, profilbild till bloggen etc).</p>
+						<p>För att få till en riktigt fin design till din bebisbok, fotobok eller det konstverk du vill skapa, <br>kan du använda våra ScrapKits som består av bakgrunder, ramar, etiketter för textutsmyckning och <br>stickers eller dina alldeles egna illustrationer. Du kan ändra utseendet och innehållet, modifiera <br>genom att ändra färger, skapa skuggeffekter... Det är endast fantasin som sätter gränser.</p>
+						<img src="/pub/img/StudioScreen.png" class="screenImg studioImg">
+						<img src="/pub/img/AppleMonitor.png" class="screenImg studioImgMV">
+						<p>När en högtid närmar sig använder du Bejaboo Studio för att skapa din familjs julkort, påskkort eller <br>inbjudningskort genom att använda våra mallar som du kan ändra fritt som du vill.</p>
+						<p>Vi har laddat Bejaboo Studio med roliga pratbubblor och fina ScrapKits som du kan använda för att få <br>ditt konstverk att se helt fantastisk ut.</p>
+						<p class="infoStudioText"><span style="color: red;">Information!</span><br>Bejaboo Studio Mobile är en app i sitt enklaste utförande och används främst för skapande av enkla konstverk.</p>
+					</div>
+					<div class="landColRightInner mv">
+						<p>Med Bejaboo Studio har vi tagit ScrapBooking och gjort det digitalt. Här skapar du konstverk som vi delar upp i Produkter (bebisbok, fotobok, pussel, kalender och andra roliga trycksaker) och Digitala Produkter (Facebook-bakgrunder, profilbild till bloggen etc).</p>
+						<p>För att få till en riktigt fin design till din bebisbok, fotobok eller det konstverk du vill skapa, kan du använda våra ScrapKits som består av bakgrunder, ramar, etiketter för textutsmyckning och stickers eller dina alldeles egna illustrationer. Du kan ändra utseendet och innehållet, modifiera genom att ändra färger, skapa skuggeffekter... Det är endast fantasin som sätter gränser.</p>
+						<img src="/pub/img/StudioScreen.png" class="screenImg studioImg">
+						<img src="/pub/img/AppleMonitor.png" class="screenImg studioImgMV">
+						<p>När en högtid närmar sig använder du Bejaboo Studio för att skapa din familjs julkort, påskkort eller inbjudningskort genom att använda våra mallar som du kan ändra fritt som du vill.</p>
+						<p>Vi har laddat Bejaboo Studio med roliga pratbubblor och fina ScrapKits som du kan använda för att få ditt konstverk att se helt fantastisk ut.</p>
+						<p class="infoStudioText"><span style="color: red;">Information!</span><br>Bejaboo Studio Mobile är en app i sitt enklaste utförande och används främst för skapande av enkla konstverk.</p>
+					</div>
+				{% endif %}
+
+
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">Bejaboo BookViewer</h4>
+				<img src="/pub/img/BookViewer_v5.jpg" class="leftColIcon">
+				<div class="supportInfo">
+					<div class="storeRow">
+						<img src="/pub/img/AppleAppstore.png">
+						<img src="/pub/img/google-play-store-logo.png">
+					</div>
+					<div class="browserRow">
+						<img src="/pub/img/chrome.png">
+						<img src="/pub/img/firefox.png">
+						<img src="/pub/img/Opera.png">
+						<img src="/pub/img/safari.png">
+						<img src="/pub/img/Internet_Explorer_10.png">
+					</div>
+				</div>
+			</div>
+			<div class="landColRight">
+				{% if lan == 'en'%}
+					<div class="landColRightInner">
+						<p>Download the Bejaboo BookViewer app to browse your books or books that others have shared with you.</p>
+						<img src="/pub/img/imgBook.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/imgBookMV.png" class="screenImg screenImgMV">
+						<p>...Once you have created your baby book or photo book, you can share it with Grandmother, and Grandfather, family and friends. Share the book and they can easily browse it with Bejaboo BookViewer.</p>
+					</div>
+				{% endif %}
+				{% if lan != 'en'%}
+					<div class="landColRightInner wv">
+						<p>Ladda ned Bejaboo BookViewer-appen för att bläddra i dina böcker eller böcker som andra har <br>delat med dig.</p>
+						<img src="/pub/img/imgBook.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/imgBookMV.png" class="screenImg screenImgMV">
+						<p>...När du har skapat din bebisbok eller fotobok så kan du dela den med Mormor, Morfar, Farmor <br>och Farfar, släkt och vänner. Dela boken och de kan enkelt bläddra i den med Bejaboo BookViewer.</p>
+					</div>
+					<div class="landColRightInner mv">
+						<p>Ladda ned Bejaboo BookViewer-appen för att bläddra i dina böcker eller böcker som andra har delat med dig.</p>
+						<img src="/pub/img/imgBook.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/imgBookMV.png" class="screenImg screenImgMV">
+						<p>...När du har skapat din bebisbok eller fotobok så kan du dela den med Mormor, Morfar, Farmor och Farfar, släkt och vänner. Dela boken och de kan enkelt bläddra i den med Bejaboo BookViewer.</p>
+					</div>
+				{% endif %}
+
+
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="landSection">
+		<div class="landSectionInner">
+			<div class="landColLeft">
+				<h4 class="landColTitle">Bejaboo Contacts</h4>
+				<img src="/pub/img/Contacts_v5.jpg" class="leftColIcon">
+				<div class="supportInfo">
+					<div class="storeRow">
+						<img src="/pub/img/AppleAppstore.png">
+						<img src="/pub/img/google-play-store-logo.png">
+					</div>
+					<div class="browserRow">
+						<img src="/pub/img/chrome.png">
+						<img src="/pub/img/firefox.png">
+						<img src="/pub/img/Opera.png">
+						<img src="/pub/img/safari.png">
+						<img src="/pub/img/Internet_Explorer_10.png">
+					</div>
+				</div>
+			</div>
+			{% if lan == 'en'%}
+				<div class="landColRight">
+					<div class="landColRightInner">
+						<p>When a child is born - a lot of new phone numbers must be remembered, such as antental clinic, child minster, preschool. With Bejaboo Contacts, you can create a family contact that you and your partner immediately have access to.</p>
+						<img src="/pub/img/ContactsScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/ContactsScreenMV.png" class="screenImg screenImgMV">
+						<p>...If you live a complicated parental life where you and the other parent of your child no longer live together - By creating a child contact, both you and the other parent have the contact information immediately in your mobile, computer or tablet.</p>
+					</div>
+				</div>
+			{% endif %}
+			{% if lan != 'en'%}
+				<div class="landColRight wv">
+					<div class="landColRightInner">
+						<p>När ett barn kommer till världen – kommer det också en massa nya kontaktuppgifter att hålla reda på, <br>som till exempel till MVC, BVC och Förskola.</p>
+						<p>Med Bejaboo Contacts kan du skapa en familjekontakt som både du och din partner direkt har <br>tillgång till.</p>
+						<img src="/pub/img/ContactsScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/ContactsScreenMV.png" class="screenImg screenImgMV">
+						<p>...Om du lever ett komplicerat föräldraliv där du och den andra föräldern till ditt barn inte längre <br>lever tillsammans – Genom att skapa en barnkontakt har både du och den andra föräldern <br>kontaktuppgifterna direkt i era mobiler, datorer eller surfplattor.</p>
+					</div>
+				</div>
+				<div class="landColRight mv">
+					<div class="landColRightInner">
+						<p>När ett barn kommer till världen – kommer det också en massa nya kontaktuppgifter att hålla reda på, som till exempel till MVC, BVC och Förskola.</p>
+						<p>Med Bejaboo Contacts kan du skapa en familjekontakt som både du och din partner direkt har tillgång till.</p>
+						<img src="/pub/img/ContactsScreen.png" class="screenImg screenImgWeb">
+						<img src="/pub/img/ContactsScreenMV.png" class="screenImg screenImgMV">
+						<p>...Om du lever ett komplicerat föräldraliv där du och den andra föräldern till ditt barn inte längre lever tillsammans – Genom att skapa en barnkontakt har både du och den andra föräldern kontaktuppgifterna direkt i era mobiler, datorer eller surfplattor.</p>
+					</div>
+				</div>
+			{% endif %}
+
+
+		</div>
+	</div>
+	<div class="no-margin section1">
+		<div class="top-space landsec-table">
+			<div class="product-text-top">
+				<div class="product-text-wrapper">
+					<h3>
+						{% if lan == 'en'%} Bejaboo - Your Family’s Best Friend {% endif %}
+						{% if lan != 'en'%} Bejaboo - Din familjs bästa vän {% endif %}
+
+					</h3>
+				</div>
+			</div>
+		</div>
+		<div class="section1TextContainer">
+			<div class="landingTextTryit">
+                <h3><span style="display:inline-block;">
+	                {% if lan == 'en'%} All apps are free to use {% endif %}
+					{% if lan != 'en'%} Alla appar är gratis att använda {% endif %}
+                </span></h3>
+			</div>
+		</div>
+		<div class="bottomRow1">
+			<div class="imgLeftContainer">
+				<a href="/Register">
+					<img class="img-bottom-bedge" src="/pub/img/badge-en.png" alt="">
+				</a>
+			</div>
+			<div class="regFormContainer">
+				<form class="registerForm" action="/Register" method="get">
+					<input id="EmailIDlower" class="lp-input" type="text" placeholder="E-mail address">
+					<input id="PassIDlower" class="lp-input" type="password" placeholder="Password">
+					<script>
+						var inputLower = document.getElementById("EmailIDlower");
+						var inputPassLower = document.getElementById("PassIDlower");
+						var timeoutCancel;
+						var SaveFunctionMailLower = function(){
+							if(inputLower.value.length==0) return;
+							clearTimeout(timeoutCancel);
+							timeoutCancel = setTimeout(function(){
+								var xhttp = new XMLHttpRequest();
+								xhttp.open("GET", "/SaveRegisterValueEmail/"+inputLower.value);
+								xhttp.send();
+							}, 250);
+						}
+						var timeoutCancelPass;
+						var SaveFunctionPassLower = function(){
+							if(inputPassLower.value.length==0) return;
+							clearTimeout(timeoutCancelPass);
+							timeoutCancelPass = setTimeout(function(){
+								var xhttp = new XMLHttpRequest();
+								xhttp.open("GET", "/SaveRegisterValuePass/"+inputPassLower.value);
+								xhttp.send();
+							}, 250);
+						}
+						inputLower.addEventListener('input', SaveFunctionMailLower);
+						inputPassLower.addEventListener('input', SaveFunctionPassLower);
+					</script>
+					<button class="regButton regButtonBottom" type="submit">
+						{% if lan == 'en'%} Register {% endif %}
+						{% if lan != 'en'%} Registrera {% endif %}
+					</button>
+				</form>
+			</div>
+		</div>
+		<div id="sheep_foot">
+			<img src="/pub/img/sheep2.png" alt="">
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+{% endblock %}

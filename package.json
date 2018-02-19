@@ -1,0 +1,13 @@
+{
+	"name": "competition",
+	"description": "test page",
+	"repository": "https://github.com/CrackerakiUA/Competition",
+	"license": "MIT",
+	"engines": {
+		"node": ">=6.10.0"
+	},
+	"dependencies": {
+		"derer": "^1.4.3",
+		"express": "^4.16.2"
+	}
+}

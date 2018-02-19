@@ -1,0 +1,34 @@
+<div class="landingTopbar">
+	<div class="logoContainer"><a href="{{{nav.land}}}"><img class="img-top-logo" src="/pub/img/logo-background-off.png" alt=""></a></div>
+	<div class="topItemsContainer">
+		<a class="inlineItems" href="{{{nav.land}}}">{% if lan=='en' %}Apps{% endif %}{% if lan!='en' %}Appar{% endif %}</a>
+		<a class="inlineItems{% if page=='babybook' %} active{% endif %}" href="{{{nav.babybook}}}">{% if lan=='en' %}Baby Book{% endif %}{% if lan!='en' %}Bebisbok{% endif %}</a>
+		<a class="inlineItems" href="{{{nav.pregnantbook}}}">{% if lan=='en' %}Pregnant Book{% endif %}{% if lan!='en' %}Gravidbok{% endif %}</a>
+		<a class="inlineItems" href="{{{nav.membership}}}">{% if lan=='en' %}Prices Membership{% endif %}{% if lan!='en' %}Priser Medlemskap{% endif %}</a>
+		<a class="inlineItems" href="{{{nav.names}}}">{% if lan=='en' %}Names{% endif %}{% if lan!='en' %}Namn{% endif %}</a>
+		<a class="inlineItems" href="{{{nav.howDoesItWork}}}">{% if lan=='en' %}How Does it Work?{% endif %}{% if lan!='en' %}Hur fungerar det?{% endif %}</a>
+	</div>
+	<div class="loginContainer">
+		<a class="loginButtonTop" href="{{{nav.login}}}">{% if lan=='en' %}Login{% endif %}{% if lan!='en' %}Logga in{% endif %}</a>
+	</div>
+	<div class="lp-flags">
+		<div class="lp-flag">
+			<a href="">
+				<img src="/pub/img/flag-se.png" alt="">
+			</a>
+		</div>
+	</div>
+
+	<div class="mobileViewMenu" onclick="toggle()" ng-click="showMenu=!showMenu;">
+		<img src="/pub/img/icon_menu.svg" class="svgMenuColor">
+	</div>
+	<div id="miniMenu" class="menu-top-mobileView" ng-show="showMenu">
+		<a class="menu-top-item-cover menu-top-item" href="{{{nav.land}}}">{% if lan=='en' %}Apps{% endif %}{% if lan!='en' %}Appar{% endif %}</a>
+		<a class="menu-top-item-cover menu-top-item" href="{{{nav.babybook}}}">{% if lan=='en' %}Baby Book{% endif %}{% if lan!='en' %}Bebisbok{% endif %}</a>
+		<a class="menu-top-item-cover menu-top-item" href="{{{nav.pregnantbook}}}">{% if lan=='en' %}Pregnant Book{% endif %}{% if lan!='en' %}Gravidbok{% endif %}</a>
+		<a class="menu-top-item-cover menu-top-item" href="{{{nav.membership}}}">{% if lan=='en' %}Prices Membership{% endif %}{% if lan!='en' %}Priser Medlemskap{% endif %}</a>
+		<a class="menu-top-item-cover menu-top-item" href="{{{nav.names}}}">{% if lan=='en' %}Names{% endif %}{% if lan!='en' %}Namn{% endif %}</a>
+		<a class="menu-top-item-cover menu-top-item" href="{{{nav.howDoesItWork}}}">{% if lan=='en' %}How Does it Work?{% endif %}{% if lan!='en' %}Hur fungerar det?{% endif %}</a>
+		<a class="menu-top-item-cover menu-top-item" href="{{{nav.login}}}">{% if lan=='en' %}Login{% endif %}{% if lan!='en' %}Logga in{% endif %}</a>
+	</div>
+</div>

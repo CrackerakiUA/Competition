@@ -13,3 +13,6 @@ which install some packages for the project. Then<br>
 After that you should see <br>
 ```Load from your browser at: http://localhost/```<br>
 open that link in yout browser and you should see the webside. You are ready to go.<br>
+
+# Tech Support
+If you have any troubles with the process or questions, you can ask by email: crackeraki@gmail.com

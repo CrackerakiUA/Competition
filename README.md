@@ -1,7 +1,8 @@
 # Comptetition Setup
 You should Fork the repo and work completely on that fork.<br>
 You can modify any file, modify structure, can delete any file and use any framework for the client side.<br>
-You can't remove server side rending swig, which is used inside the app.js, in fact you probably don't need to touch it as it's working. Don't create subfolders inside of css html img folders, but you can create any folder inside the root folder and inside of the website you can load it as: /pub/FOLDERNAME/FILENAME
+You can't remove server side rending swig, which is used inside the app.js, in fact you probably don't need to touch it as it's working. Don't create subfolders inside of css html img folders, but you can create any folder inside the root folder and inside of the website you can load it as: /pub/FOLDERNAME/FILENAME<br>
+In this readme file, please write your email.
 
 # Get Started
 To start you have to install node.js, which you can [find here](https://nodejs.org/en/)<br>
